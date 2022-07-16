@@ -1,5 +1,5 @@
 {
-  "name": "@hasanparasteh/vue3-price-ticker",
+  "name": "@hasanparasteh/price-ticker",
   "description": "This package helps you to create a price update animation with a simple component!",
   "displayName": "vue3-price-ticker",
   "maintainers": [

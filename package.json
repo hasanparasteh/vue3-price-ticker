@@ -1,0 +1,71 @@
+{
+  "name": "@hasanparasteh/vue3-price-ticker",
+  "description": "This package helps you to create a price update animation with a simple component!",
+  "displayName": "vue3-price-ticker",
+  "maintainers": [
+    {
+      "name": "Hasan Parasteh",
+      "email": "hasanparasteh@gmail.com",
+      "url": "https://github.com/hasanparasteh/vue3-price-ticker"
+    },
+    {
+      "name": "Mohammad Hossein Nayeb Agha",
+      "email": "mohammadhossein.nayeb@gmail.com",
+      "url": "https://github.com/mhnayeb/price-ticker"
+    }
+  ],
+  "version": "0.1.0",
+  "private": false,
+  "author": "Hasan Parasteh <hasanparasteh@gmail.com> (https://github.com/hasanparasteh/vue3-price-ticker)",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/node": "^18.0.5",
+    "@types/rollup-plugin-css-only": "^3.1.0",
+    "@vitejs/plugin-vue": "^3.0.0",
+    "rollup-plugin-css-only": "^3.1.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.0",
+    "vite-plugin-css-injected-by-js": "^1.5.1",
+    "vue-tsc": "^0.38.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasanparasteh/vue3-price-ticker.git"
+  },
+  "keywords": [
+    "ticker",
+    "price-ticker",
+    "vue3"
+  ],
+  "bugs": {
+    "url": "https://github.com/hasanparasteh/vue3-price-ticker/issues"
+  },
+  "homepage": "https://github.com/hasanparasteh/vue3-price-ticker#readme",
+  "main": "./dist/vue3-price-ticker.cjs",
+  "module": "./dist/vue3-price-ticker.js",
+  "style": "./dist/vue3-price-ticker.css",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-price-ticker.js",
+      "require": "./dist/vue3-price-ticker.umd.cjs"
+    }
+  }
+}

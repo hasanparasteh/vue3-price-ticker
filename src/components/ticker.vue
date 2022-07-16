@@ -8,7 +8,7 @@ import { onMounted, toRef, watch } from "vue";
 const props = withDefaults(
   defineProps<{
     price: number | string;
-    removeNUmberEffect: number;
+    removeNumberEffect: number;
     addNumberEffect: number;
   }>(),
   {
@@ -51,7 +51,7 @@ function ticker(data: string[]): void {
       setTimeout(() => {
         spanList[i].classList.remove("number__removeEffect");
         spanList[i].classList.add("number__addEffect");
-      }, props.removeNUmberEffect);
+      }, props.removeNumberEffect);
       setTimeout(() => {
         spanList[i].classList.remove("number__addEffect");
       }, props.addNumberEffect);
@@ -60,20 +60,22 @@ function ticker(data: string[]): void {
 
   setTimeout(() => {
     tickerNode.replaceChildren(...spanList);
-  }, props.removeNUmberEffect);
+  }, props.removeNumberEffect);
 }
 </script>
 
-<style>
+<style scoped>
 #ticker {
   overflow: hidden;
 }
+
 .number__addEffect {
   font-weight: bold;
   position: relative;
   animation: addEffect 600ms infinite;
   font-weight: normal;
 }
+
 .number__removeEffect {
   font-weight: bold;
   position: relative;
@@ -90,14 +92,17 @@ span {
     bottom: 15px;
     opacity: 0;
   }
+
   to {
     bottom: 0;
   }
 }
+
 @keyframes removeEffect {
   from {
     top: 0;
   }
+
   to {
     top: 15px;
     opacity: 0;

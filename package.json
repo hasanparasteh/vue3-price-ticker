@@ -1,17 +1,17 @@
 {
-  "name": "ticker",
-  "private": true,
+  "name": "@hasanparasteh/vue3-price-ticker",
   "version": "0.0.1",
+  "author": "Hasan Parasteh <hasanparasteh@gmail.com> (https://github.com/hasanparasteh/vue3-price-ticker)",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
-    "./styles.css": "./dist/style.css" 
+    "./styles.css": "./dist/style.css"
   },
   "browser": {
     "./styles.css": "./dist/style.css"
   },
   "types": "./dist/TickerPlugin.d.ts",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "files": [
     "dist"
   ],
@@ -31,5 +31,20 @@
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vue-tsc": "^0.34.7"
-  }
+  },
+  "description": "This package helps you to create a price update animation with a simple component!",
+  "main": "./src/main.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasanparasteh/vue3-price-ticker.git"
+  },
+  "keywords": [
+    "ticker",
+    "price-ticker",
+    "vue3"
+  ],
+  "bugs": {
+    "url": "https://github.com/hasanparasteh/vue3-price-ticker/issues"
+  },
+  "homepage": "https://github.com/hasanparasteh/vue3-price-ticker#readme"
 }
